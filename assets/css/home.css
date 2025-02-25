@@ -39,6 +39,11 @@ html[data-theme="dark"] {
   --col-icon-leetcode:rgb(255, 181, 62);
   --col-white: #fff;
 }
+html[data-theme="dark"] .card-image img {
+  filter: invert(1);
+}
+
+
 /* Particle effect*/
 body{
   font-family: "Poppins";
@@ -95,16 +100,9 @@ body{
     EDUCTIONAL BACKGROUND
 
 */
-#card2
-{
-  background: var(--bg-icon);
-  color: var(--col-icon);
-  box-shadow: var(--col-box-shadow);
-  margin-top: -200%;
-}
+
 .educational-background {
-  background: var(--bg1-color); 
-  color: var(--col-icon);
+ 
   margin-top: -300px; /* Moves the section closer */
   display: flex;
   justify-content: center;
@@ -112,56 +110,73 @@ body{
   background: #f9f9f9;
   padding: 40px 20px;
   border-radius: 10px;
-}
-
-
-.card2 {
+ 
   background: var(--bg-icon);
   color: var(--col-icon);
   box-shadow: var(--col-box-shadow);
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  background: white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  padding: 20px;
-  width: 900px;
-  
 }
 
-.card-image2 img {
+
+.card.educational-background {
+  margin-top:auto;
+  
+  margin-top: -300px; /* Moves the section closer */
+  background: var(--bg-icon);
+  color: var(--col-icon);
+  box-shadow: var(--col-box-shadow);
+  height: auto;
+  display: flex; /* Flexbox layout for side-by-side alignment */
+  flex-direction: row; /* Ensure the image and text are side by side */
+  align-items: center; /* Vertically center-align the image and text */
+  justify-content: flex-start; /* Align items to the left */
+  width: 90%;
+  box-shadow: 1px 1px 1px rgba(249, 249, 249, 0.963);
+  max-width: 100%;
+  overflow: hidden;
+  transform: rotateY(-90deg); /* Start with a closed "book" state */
+  transform-origin: left; /* Rotate from the left edge */
+  transition: transform 1s ease-out, opacity 0.5s ease-out;
+  opacity: 0; /* Hide the card initially */
+}
+
+.card-image img {
   border-radius: 10px;
   margin-right: 20px;
+ /* background-color: rgba(255, 255, 255, 0.2);*/ /* Light background 
+ filter: drop-shadow(0 0 50px white) drop-shadow(0 0 50px white); */
+
+ filter: drop-shadow(0 0 100px white) drop-shadow(0 0 550px white) drop-shadow(0 0 140px white) drop-shadow(0 0 70px white);
+
+padding: 15px; /* Add spacing */
 }
 
-.card-content2 {
+.card-content {
   text-align: left;
   color: var(--col-icon);
 }
 
-.card-content2 h2 {
+.card-content h2 {
   font-size: 22px;
-  color: #333;
+  color: #777;
   margin-bottom: 5px;
   color: var(--col-icon);
 }
 
-.card-content2 h3 {
+.card-content h3 {
   font-size: 18px;
-  color: #666;
+  color: #777;
   margin-bottom: 10px;
   color: var(--col-icon);
 }
 
-.card-content2 ul {
+.card-content ul {
   list-style-type: disc;
   padding-left: 20px;
-  color: #444;
+  color: #777;
   color: var(--col-icon);
 }
 
-.card-content2 p {
+.card-content p {
   font-size: 16px;
   font-weight: bold;
   color: #777;
@@ -172,6 +187,7 @@ body{
   text-align: center;
   padding: 20px;
   border-radius: 0%;
+ 
 }
 
 .work-experience .highlight {
@@ -191,8 +207,38 @@ body{
   color: purple;
 }
 
+/*
+  mouse movement
+
+*/
+.follower {
+  width: 20px;
+  height: 20px;
+  background-color: #8d36ff;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none; /* Prevents interference */
+  transform: translate(-50%, -50%);
+}
+
+.trail {
+  background-color:  #8d47e8; /* More transparent */
+  width: 15px;
+  height: 15px;
+}
+
+.trail2 {
+  background-color:  #633a9a; /* Even more transparent */
+  width: 10px;
+  height: 10px;
+}
+
+
 /* Card Styling */
 .card {
+  margin-top:auto;
   background: var(--bg-icon);
   color: var(--col-icon);
   box-shadow: var(--col-box-shadow);
@@ -201,9 +247,9 @@ body{
   flex-direction: row; /* Ensure the image and text are side by side */
   align-items: center; /* Vertically center-align the image and text */
   justify-content: flex-start; /* Align items to the left */
-  width: 70%;
-  box-shadow: 0 4px 6px rgba(0.5, 0.5, 0, 0.1);
-  
+  width: 90%;
+  box-shadow: 1px 1px 1px rgba(249, 249, 249, 0.963);
+  max-width: 100%;
   overflow: hidden;
   transform: rotateY(-90deg); /* Start with a closed "book" state */
   transform-origin: left; /* Rotate from the left edge */
@@ -211,8 +257,8 @@ body{
   opacity: 0; /* Hide the card initially */
 }
 
-.card.rectangle {
-  border-radius: 15px; /* Removes rounded corners */
+.card.rectangle{
+  border-radius: 20px; /* Removes rounded corners */
   align-items: center;
   display: flex;
   margin-left: 70px;
@@ -231,11 +277,13 @@ body{
   justify-content: center;
   align-items: center;
   padding: 10px;
+  background-color: transparent;
 }
 
 .card-image img {
   max-width: 100%; /* Ensure the image fits within the section */
   object-fit: fit;
+  background-color: transparent;
 }
 
 /* Card Content Section */
@@ -263,7 +311,7 @@ body{
 
 .card-content h3 {
   font-size: 1.2rem;
-  color: #555;
+  color: #717070;
   margin-bottom: 10px;
 }
 
@@ -314,9 +362,10 @@ body{
 .project-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+  gap: -50%;
   margin-top: 0px; /* Reduce extra spacing */
   background: var(--bg1-color);
+  justify-items: center;
 }
 
 .project-card {
@@ -324,11 +373,14 @@ body{
   color: var(--col-icon);
   box-shadow: var(--col-box-shadow);
   margin-top: 10px; /* Reduce extra spacing */
-  background: white;
+  background: rgba(217, 217, 217, 0.837);
   border-radius: 10px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   padding: 15px;
   text-align: center;
+  transition: all 0.3s ease;
+  max-width: 85%; /* Set a maximum width */
+  width: 100%;
 }
 
 .project-card img {

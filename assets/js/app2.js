@@ -10,7 +10,7 @@ document.body.appendChild(script);
 
 let header = $(`
 <nav class="navbar navbar-expand-lg fixed-top dark-theme" id="navbar">
-<a class="navbar-brand" href="index.html">Sandile Gontsana </a>
+<a class="navbar-brand" href="index2.html">Sandile Gontsana </a>
 <div class="hamburger_wrapper navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 
   <div id="js-hamburger" class="hamburger">
@@ -23,10 +23,10 @@ let header = $(`
 
 <div class="collapse navbar-collapse " id="navbarSupportedContent">
   <ul class="navbar-nav ml-auto" id = "navbar-content">
-   <li class="nav-item nav-item-hover"><a class="nav-link" href="index2.html">Home</a></li>
-   <li class="nav-item nav-item-hover"><a class="nav-link" href="#">Experience</a></li>
-   <li class="nav-item nav-item-hover"><a class="nav-link" href="#.html">Education</a></li>
-   <li class="nav-item nav-item-hover"><a class="nav-link" href="#.html">Tools</a></li>
+   <li class="nav-item nav-item-hover"><a class="nav-link" href="index.html">Home</a></li>
+   <li class="nav-item nav-item-hover"><a class="nav-link" href="#work-experience">Experience</a></li>
+   <li class="nav-item nav-item-hover"><a class="nav-link" href="#educational-background">Education</a></li>
+   <li class="nav-item nav-item-hover"><a class="nav-link" href="#language-header">Tools</a></li>
    <li class="nav-item nav-item-hover"><a class="nav-link" href="#.html">Projects</a></li>
       <li class="nav-item nav-item-hover"><a class="nav-link" href="assets/Resume/SANDILE GONTSANA CV Graduate short.pdf">Resume</a></li>
    <li class="nav-item">
@@ -34,7 +34,7 @@ let header = $(`
    </li>
    <div class="bike">
    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-80 0 650 400" preserveAspectRatio="xMinYMin meet">
-     <rect/>
+     <rect/> 
      <g>
        <g id="man-bike">
          <path id="Vector_2" opacity="0.1" d="M201.091 276.806L179.893 255.76L173.269 262.513L194.467 283.559L201.091 276.806Z" fill="black" />

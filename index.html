@@ -17,6 +17,8 @@
    <!--<link rel="stylesheet" href="assets/css/preloader.css">--> 
     <link rel="stylesheet" href="assets/css/home.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    
    
       <!-- <link rel="stylesheet" href="assets/css/experience.css" />
   Favicon -->
@@ -275,14 +277,15 @@
             </div>
         </section>
         <br><br><br><br>
+
         <section class="work-experience" id="work-experience" >
             <!--<h1>Work <span class="highlight">Experience</span></h1>-->
             <div class="card rectangle">
               <div class="card-image">
-                <img src="assets/images/investhood.jpg" alt="Investhood IT Logo">
+                <img src="assets/images/investhood2-removebg-preview (1).png" height="200px" alt="Investhood IT Logo">
               </div>
               <div class="card-content">
-                <h2>Software Development Intern</h2>
+                <h1>Software Development Intern</h1>
                 <h3>Investhood IT</h3>
                 <p><em>(Jan, 2024 - Present)</em></p>
                 <ul>
@@ -300,10 +303,11 @@
 
 
        
-    
+         
+        
        
           <div class="container pt-5" style="width: 100%; min-height: 80%;">
-            <section style="height: 90vh;">
+            <section style="height: 90vh;" id="educational-background">
                 <div class="container-fluid px-3 pt-5">
                     <div class="row mx-auto">
                         <div class="godown col-md-6">
@@ -505,13 +509,14 @@
             </div>
             <br><br>
             
+            
             <section class="educational-background" id="educational-background">
-                <div class="card2 rectangle">
-                    <div class="card-image2">
-                        <img src="assets/images/TUT.jpg" height="150px" alt="TUT Logo">
+                <div class="card rectangle">
+                    <div class="card-image">
+                        <img src="assets/images/TUT-removebg-preview.png" height="200px" alt="TUT Logo">
                     </div>
-                    <div class="card-content2">
-                        <h2>NATIONAL DIPLOMA IT: COMMUNICATION NETWORKS</h2>
+                    <div class="card-content">
+                        <h1>NATIONAL DIPLOMA IT: COMMUNICATION NETWORKS</h1>
                         <h3>Tshwane University of Technology</h3>
                         <p><em>Feb 2019 - April 2024</em></p>
                         <ul>
@@ -526,8 +531,8 @@
             
           
     <br><br><br><br>
-     
-        <div class="language-header">
+    
+        <div class="language-header" id="language-header">
             <h1>Programming Languages</h1>
             <p>Software Developer | Passionate About Building Innovative Solutions</p>
         </div>
@@ -580,6 +585,7 @@
     
     </div>
     <br><br>
+    
    
     <div class="container pt-5" style="width: 100%; min-height: 80%;">
         <section style="height: 90vh;">
@@ -816,6 +822,7 @@
         </section>
     </div>
     <section id="projects">
+        <h2 style="margin-bottom: 5%;margin-top: 5%; text-align: center;">Projects as a Freelancer</h2>
         <div class="project-container">
             <div class="project-card">
                 <img src="assets/images/website1.png" alt="Project 1">
@@ -838,7 +845,7 @@
     </section>
    
     <section id="projects">
-        <h2 style="margin-top: 240px; text-align: center;">Projects under Investhood IT</h2>
+        <h2 style="margin-top: 300px; margin-bottom: 5%; text-align: center;">Projects under Investhood IT</h2>
         <div class="project-container">
             <div class="project-card">
                 <img src="assets/images/website3.png" alt="Project 3">
@@ -860,13 +867,19 @@
     </section>
     
    
-
+<!--mouse movement-->
     <div class="project-box" style="padding: 20px;">
         <div class="row page-content projectcards">
             <!-- Dynamic project card -->
         </div>
     </div>
       
+    <div class="follower"></div>
+    <div class="follower trail"></div>
+    <div class="follower trail2"></div>
+
+
+    
  <!--Cursor-->
  <div class="cursor-dot-outline"></div>
  <div class="cursor-dot"></div>
@@ -887,10 +900,41 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js'></script>
     <script src="assets/js/particle.js"></script>
+    <link rel="stylesheet" href="assets/css/preloader.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    
     <script>
+        const cursor = document.querySelector(".follower");
+        const trail1 = document.querySelector(".trail");
+        const trail2 = document.querySelector(".trail2");
+
+        document.addEventListener("mousemove", (event) => {
+            gsap.to(cursor, {
+                x: event.pageX,
+                y: event.pageY,
+                duration: 0.2,
+                ease: "power2.out"
+            });
+
+            gsap.to(trail1, {
+                x: event.pageX,
+                y: event.pageY,
+                duration: 0.4, /* Slight delay for trailing effect */
+                ease: "power2.out"
+            });
+
+            gsap.to(trail2, {
+                x: event.pageX,
+                y: event.pageY,
+                duration: 0.6, /* More delay for a smoother trail */
+                ease: "power2.out"
+            });
+        });
+    </script>
+    
+
+   
+   <script>
        document.addEventListener("DOMContentLoaded", () => {
     const cards = document.querySelectorAll(".card.rectangle");
 
