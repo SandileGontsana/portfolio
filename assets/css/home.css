@@ -119,7 +119,7 @@ body{
 
 .card.educational-background {
   margin-top:auto;
-  
+  border-top:0%;
   margin-top: -300px; /* Moves the section closer */
   background: var(--bg-icon);
   color: var(--col-icon);
@@ -141,6 +141,7 @@ body{
 
 .card-image img {
   border-radius: 10px;
+  
   margin-right: 20px;
  /* background-color: rgba(255, 255, 255, 0.2);*/ /* Light background 
  filter: drop-shadow(0 0 50px white) drop-shadow(0 0 50px white); */
@@ -239,6 +240,11 @@ padding: 15px; /* Add spacing */
 /* Card Styling */
 .card {
   margin-top:auto;
+  border: hidden;
+  border-bottom: hidden;
+  border-top: hidden;
+  border-left: 30%;
+  border-color: #383838;
   background: var(--bg-icon);
   color: var(--col-icon);
   box-shadow: var(--col-box-shadow);
@@ -248,7 +254,6 @@ padding: 15px; /* Add spacing */
   align-items: center; /* Vertically center-align the image and text */
   justify-content: flex-start; /* Align items to the left */
   width: 90%;
-  box-shadow: 1px 1px 1px rgba(249, 249, 249, 0.963);
   max-width: 100%;
   overflow: hidden;
   transform: rotateY(-90deg); /* Start with a closed "book" state */
