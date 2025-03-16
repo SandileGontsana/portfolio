@@ -378,7 +378,6 @@ padding: 15px; /* Add spacing */
   color: var(--col-icon);
   box-shadow: var(--col-box-shadow);
   margin-top: 10px; /* Reduce extra spacing */
-  background: rgba(217, 217, 217, 0.837);
   border-radius: 10px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   padding: 15px;
