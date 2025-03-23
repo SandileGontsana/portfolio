@@ -446,6 +446,11 @@ padding: 15px; /* Add spacing */
   text-decoration: none;
   border-radius: 5px;
 }
+.investhood-projects-title {
+  margin-top: 300px;
+  margin-bottom: 5%;
+  text-align: center;
+}
 
 @keyframes blink {
   from {
@@ -486,6 +491,9 @@ padding: 15px; /* Add spacing */
   .project-card a {
     padding: 10px 15px;
     font-size: 14px;
+  }
+  .investhood-projects-title {
+    margin-top: 20px;
   }
 }
 
