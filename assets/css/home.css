@@ -273,17 +273,7 @@ padding: 15px; /* Add spacing */
   width: 10px;
   height: 10px;
 }
-@media screen and (max-width: 768px) {
-  .test-font-size-responsive {
-      font-size: 14px; /* Adjust font sizes for readability on smaller devices */
-  }
-}
 
-@media screen and (max-width: 480px) {
-  .test-font-size-responsive {
-      font-size: 12px; /* Further adjust font sizes for very small devices */
-  }
-}
 
 
 /* Card Styling */
@@ -457,8 +447,6 @@ padding: 15px; /* Add spacing */
   border-radius: 5px;
 }
 
-
-
 @keyframes blink {
   from {
     opacity: 0;
@@ -468,6 +456,39 @@ padding: 15px; /* Add spacing */
     opacity: 1;
   }
 }
+
+@media screen and (max-width: 768px) {
+  #projects {
+    margin-top: 20px; /* Adjust spacing for mobile */
+  }
+
+  .project-container {
+    display: flex; /* Use flexbox for better mobile stacking */
+    flex-direction: column; /* Stack projects vertically */
+    gap: 20px; /* Ensure proper spacing */
+    align-items: center; /* Center-align projects */
+  }
+
+  .project-card {
+    max-width: 90%; /* Adjust width for smaller screens */
+    padding: 10px;
+  }
+
+  .project-card img {
+    width: 100%;
+    height: auto; /* Keep image proportions */
+  }
+
+  .project-card h3 {
+    font-size: 18px; /* Adjust text size for readability */
+  }
+
+  .project-card a {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+}
+
 
 /*Social icons*/
 
