@@ -209,8 +209,8 @@ padding: 15px; /* Add spacing */
 }
 @media screen and (max-width: 768px) {
   .educational-background {
-    margin-top: -100px; /* Adjust spacing for smaller screens */
-    padding: 20px 10px;
+    margin-top: -250px; /* Adjust spacing for smaller screens */
+    padding: 20px 20px;
     flex-direction: column; /* Stack elements vertically */
   }
 
@@ -464,7 +464,7 @@ padding: 15px; /* Add spacing */
 
 @media screen and (max-width: 768px) {
   #projects {
-    margin-top: 20px; /* Adjust spacing for mobile */
+    margin-top: 2px; /* Adjust spacing for mobile */
   }
 
   .project-container {
@@ -711,8 +711,11 @@ html[light-mode="dark"] .socialicon{
 }
 @media screen and (max-width: 768px) {
   .language-header {
-    padding: 15px 5px; /* Reduce padding for smaller screens */
+    padding: 15px 15px; /* Reduce padding for smaller screens */
     margin-bottom: 30px;
+    max-width: 100%;
+    
+   
   }
 
   .language-header h1 {
