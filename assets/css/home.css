@@ -709,6 +709,63 @@ html[light-mode="dark"] .socialicon{
   height: 50px;
   border-radius: 5px;
 }
+@media screen and (max-width: 768px) {
+  .language-header {
+    padding: 15px 5px; /* Reduce padding for smaller screens */
+    margin-bottom: 30px;
+  }
+
+  .language-header h1 {
+    font-size: 2em; /* Reduce font size for better fit */
+  }
+
+  .language-header p {
+    font-size: 1em;
+  }
+
+  .container {
+    flex-direction: column; /* Stack sections vertically */
+    align-items: center;
+    gap: 20px; /* Reduce spacing between sections */
+    margin-bottom: 50px;
+  }
+
+  .section {
+    width: 90%; /* Make sections take up most of the screen width */
+    max-width: 300px; /* Prevent sections from being too wide */
+  }
+
+  .section h2 {
+    font-size: 1em; /* Reduce font size for better readability */
+    padding: 8px;
+  }
+
+  .section h1 {
+    font-size: 1em;
+    margin-bottom: 30px;
+  }
+
+  .tools-section {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .tools-section h2 {
+    font-size: 1.5em;
+  }
+
+  .tools-icons {
+    flex-wrap: wrap; /* Allow icons to wrap instead of forcing a single row */
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .tools-icons img {
+    width: 40px; /* Reduce size on small screens */
+    height: 40px;
+  }
+}
+
 
 
 /*
