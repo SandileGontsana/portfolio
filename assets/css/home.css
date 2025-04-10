@@ -1222,7 +1222,7 @@ a:hover {
 
 .profile-img img {
   width: 220px;
-  height: 220px;
+  height: 320px;
   border-bottom-right-radius: 20%;
   border-top-left-radius: 10%;
   object-fit: cover;
@@ -1231,7 +1231,7 @@ a:hover {
 }
 
 .profile-img img:hover {
-  transform: scale(1.05);
+  transform: scale(1.15);
 }
 
 /* 
