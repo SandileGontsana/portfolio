@@ -217,7 +217,7 @@ let footer = $(`
     </a>
 
   
-  <a class="social-button linkedin" href="https:www.linkedin.com/in/sandile-gontsana-165147235" target="https:www.linkedin.com/in/sandile-gontsana-165147235" >
+  <a class="social-button linkedin" href="www.linkedin.com/in/sandile-gontsana-165147235" target="https:www.linkedin.com/in/sandile-gontsana-165147235" >
     <!-- svg code for linkedin icon -->
       <svg class="linkedin-icon-footer" xmlns="http://www.w3.org/2000/svg" width="35" viewBox="0 0 24 24" fill="#0e76a8"
         stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin">
